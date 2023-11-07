@@ -11,16 +11,17 @@ def main():
     test_saisir_numero()
     test_tri_etudiants()
 
-
+# Test enregistrer Etudinat
 def test_enregistrer_etudiant():
-    # Créer des données fictives pour le nouvel étudiant (remplacer le numéro par 1)
+    # Créer des données fictives pour le nouvel étudiant, pour que ce test réussisse, 
+    # il faut que cet etudiant soit réel, c'est à dire il doit etre dans le fichier CSV
     numero = 1  # Modification du numéro
     matricule = "2023XA657O"
     nom = "Ambdil-kayoum"
     prenom = "MOHAMED"
     sexe = "M"
     serie = "A1"
-    date_naissance = "23-03-1998, GEGE"  # Format correct
+    date_naissance = "23-03-1998, GEGE"  
     faculte = "Faculté de Droit et Sciences Economiques(FDSE)"
     departement = "Droit"
     email = "mohamed.ambdil-kayoum@udc.edu.km"
@@ -45,7 +46,7 @@ def test_enregistrer_etudiant():
     assert premier_etudiant.email == email
 
 
-# Définir une fonction de test
+# Test verifier numero existant
 def test_numero_existe_deja():
     # Créer un numéro d'étudiant fictif qui existe déjà dans la liste des étudiants
     numero_existant = 1
@@ -59,10 +60,11 @@ def test_numero_existe_deja():
     # Appeler la fonction numero_existe_deja avec ce numéro et récupérer le résultat
     resultat_inexistant = numero_existe_deja(numero_inexistant)
     # Vérifier que le résultat est bien False
+    # Parce que ce numéro n'existe pas 
     assert resultat_inexistant == False
 
 
-# Définir une fonction de test
+# Test afficher informations
 def test_afficher_informations_etudiant():
     # Créer un objet Etudiant fictif avec des données de l'étudiant numéro 1
     etudiant = Etudiant(
@@ -105,7 +107,7 @@ Email              mohamed.ambdil-kayoum@udc.edu.km
 -----------------  --------------------------------\n"""
 
 
-# Définir une fonction de test
+# Test saisir numéro
 def test_saisir_numero(monkeypatch):
     # Utiliser le module monkeypatch pour simuler l'entrée de l'utilisateur
     monkeypatch.setattr('builtins.input', lambda _: "42")
@@ -117,7 +119,7 @@ def test_saisir_numero(monkeypatch):
     assert numero == 42
 
 
-
+# Test tri etudiant
 def test_tri_etudiants(monkeypatch, capsys):
     # Simule l'entrée utilisateur avec "IFERE"
     monkeypatch.setattr('builtins.input', lambda _: "IFERE")
@@ -133,3 +135,5 @@ def test_tri_etudiants(monkeypatch, capsys):
 
 if __name__ == "__main__":
     main()
+
+# Pour l'intant ce sont les fonctions testées, le projet necessitait au moins 3

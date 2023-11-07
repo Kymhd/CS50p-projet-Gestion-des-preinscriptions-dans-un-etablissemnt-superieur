@@ -1,6 +1,6 @@
 """
 |-------------------------------------------------------------------|
-|    Programme: Gestion des Inscriptions                            |
+|    Programme: Gestion des Préinscriptions                         |
 |    Développé par : Ambdil-Kayoum MOHAMED                          |
 |    Date de développement: Novembre 2023                           |
 |    Cours: HarvardX CS50s Introduction to Programming with Python  |
@@ -30,10 +30,13 @@ FILENAME = 'students.csv'
 MAX_TENTATIVES = 3
 DELAI = 1.2
 
-console = Console()
-# Fonction principale qui essaie d'appeller la fonction gestion, s'il ne trouve pas une exception
-# Selon les exigences du projet, cette fonction main doit être au début 
+console = Console() # Pour l'utilisation de rich
+
+
 def main():
+    """
+    Fonction principale qui essaie d'appeller la fonction gestion, s'il ne lève pas une exception
+    Selon les exigences du projet, cette fonction main() doit être au début """
     try:
         gestion()
     
@@ -744,8 +747,6 @@ def gestion():
     print()
     console.print("[bold magenta]Merci d'avoir utilisé le système de préinscription des étudiants.[reset]")
     print()
-
-
 
 
 if __name__ == "__main__":

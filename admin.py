@@ -5,6 +5,9 @@ import json
 import hashlib
 
 # Définir la classe Admin
+
+# Il y a plusieurs methodes pour cette classe, meme si dans le programme principal, nous utilisons pour
+# l'instant la methode Login() seulement
 class Admin:
     """Une classe qui représente un administrateur avec un email et un mot de passe hashé."""
 
@@ -110,6 +113,4 @@ class Admin:
                 return True
         return False
 
-# email = input()
-# dmin1 = Admin.login()
-# email = input()
+

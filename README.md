@@ -5,6 +5,10 @@
 #### Description:
 Ce programme a pour objectif de simuler le processus d’inscription des étudiants à l’Université des Comores (UDC), dans un cadre pédagogique à la suite du cours [HRVARDx CS50’s Introduction to Programming with Python](https://cs50.harvard.edu/python/2022/). Il s’agit d’une solution simplifiée qui ne prétend pas refléter la réalité d’un système d’inscription universitaire. Ce programme vise à illustrer les notions fondamentales de la programmation Python et de la manipulation des données CSV. Il ne tient pas compte de toutes les contraintes et spécifications d’un véritable système d’inscription universitaire. Le programme se divise en deux parties, une pour les étudiants et une pour l’administration, qui offrent des fonctionnalités adaptées à chaque type d’utilisateur.
 
+## Certificat
+
+<img src="projet/CS50Pcertificat.png" />
+
 ## Table des matières
 
 - [Auteur](#auteur)
@@ -14,7 +18,6 @@ Ce programme a pour objectif de simuler le processus d’inscription des étudia
 - [Structure du Programme](#structure-du-programme)
 - [Classes](#classes)
 - [Fonctions](#fonctions)
-- [Mon Certificat](#mon-Certificat)
 - [Licence](#licence)
 
 ## Auteur
@@ -141,9 +144,6 @@ Ces classes gèrent des fonctionnalités spécifiques liées aux universités, �
 
 Des test ``pytest`` pour la classe ``Student`` et des test pour les fonctions pricipales dans le fichier ``projet.py``.
 
-## Certificat obtenu
-
-<img src="projet/CS50Pcertificat.png" />
 
 
 ## Licence

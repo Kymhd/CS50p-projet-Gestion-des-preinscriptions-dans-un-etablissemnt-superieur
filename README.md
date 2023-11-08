@@ -128,7 +128,7 @@ Méthodes :
 - `enregistrer_dans_csv()` : Enregistre les informations de l'étudiant dans un fichier CSV.
 - `__str__()` : Renvoie une représentation sous forme de chaîne de caractères de l'objet étudiant.
 
-### Autres Classes (universite.py, validation.py, admin.py)
+### Autres Classes (universite.py, admin.py, generPDF.py, universite)
 
 Ces classes gèrent des fonctionnalités spécifiques liées aux universités, à la validation et aux opérations administratives.
 
@@ -143,7 +143,7 @@ Ces classes gèrent des fonctionnalités spécifiques liées aux universités, �
 - `connecter_etudiant(num_etudiant)` : Connecte un étudiant existant et affiche ses informations.
 - `enregistrer_donne(donne)` : Enregistre la liste des étudiants dans le fichier CSV.
 
-Des test ``pytest`` pour la classe ``Student`` et des test pour les fonctions pricipales dans le fichier ``projet.py``.
+Des test ``pytest`` pour la classe ``Univeriste`` et des test pour les fonctions principales dans le fichier ``projet.py``.
 
 
 

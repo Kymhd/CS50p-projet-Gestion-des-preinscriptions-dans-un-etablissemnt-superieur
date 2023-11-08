@@ -4,7 +4,9 @@ import qrcode
 import os
 from validation import afficher_date_formattee, genere_id
 
-dossier_images = 'images'
+# Ce module contient une classe qui creer et de génerer un pdf.
+
+dossier_images = 'images' # recupération du dossier images
 
 class PDF(FPDF):
     def header(self):

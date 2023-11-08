@@ -17,14 +17,14 @@ def test_enregistrer_etudiant():
     # il faut que cet etudiant soit réel, c'est à dire il doit etre dans le fichier CSV
     numero = 1  # Modification du numéro
     matricule = "2023XA657O"
-    nom = "Ambdil-kayoum"
-    prenom = "MOHAMED"
+    nom = "JOE"
+    prenom = "DOE"
     sexe = "M"
     serie = "A1"
-    date_naissance = "23-03-1998, GEGE"  
+    date_naissance = "01-01-2001, NEW YORK"  
     faculte = "Faculté de Droit et Sciences Economiques(FDSE)"
     departement = "Droit"
-    email = "mohamed.ambdil-kayoum@udc.edu.km"
+    email = "doe.joe@udc.edu.km"
 
     # Appeler la fonction enregistrer_etudiant avec le numéro fictif
     etudiants = enregistrer_etudiant(numero)

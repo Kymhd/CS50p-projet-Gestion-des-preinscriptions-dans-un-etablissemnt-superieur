@@ -2,10 +2,15 @@ import re
 from datetime import datetime
 import uuid
 
+# Ce module contient des fonctions qui peuvent etre appelées partout
+
+# Fonction qui verifie si l'adresse est valide le radical doit etre @udc.edu.km et un point avant le radical
 def verifie_adresse_email(email):
+
     return bool(re.match(r"^[\w.%+-]+@udc\.edu\.km$", email))
 
 
+# Fonction qui permet d'afficher la date du jour dans le document PDF
 def afficher_date_formattee():
     # Obtenir la date actuelle
     aujourd_hui = datetime.now()

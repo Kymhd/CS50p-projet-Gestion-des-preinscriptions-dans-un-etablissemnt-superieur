@@ -48,8 +48,8 @@ Image 2: Inscription d'un etudiant
 #### Géneration de fichier d'incription PDF de l'etudiant
 
 #### Capture:
-<img src="projet/pdf.png" />
-Image 3: Fichier pdf qui se gènere pour chaque Etudiant inscrit
+<img src="projet/2023XA657O.png" />
+Image 3: Fichier pdf qui se gènere pour chaque Etudiant inscrit avec un QrCode qui contient certains données de l'Etudiant
 
 ###
 
@@ -74,7 +74,7 @@ Image 5: Interface Administration
 
 ## Exigences
 
-Pour exécuter ce programme, vous aurez besoin de Python 3.8 ainsi que des bibliothèques externes suivantes :
+Pour exécuter ce programme, vous aurez besoin de Python 3.8 ou plus ainsi que des bibliothèques externes suivantes :
 faites un  - ``pip install -r requirements.txt`` pour installer les dépendances:
 
 - `re` : Expressions régulières (intégré).
@@ -84,8 +84,9 @@ faites un  - ``pip install -r requirements.txt`` pour installer les dépendances
 
 ## Utilisation
 
-1. Assurez-vous d'avoir Python et les bibliothèques requises installées ``pip install -r requirements.txt``.
-2. Exécutez le programme en lançant le script `projet.py`.
+1. Faites un git clone : ``git clone https://github.com/Kymhd/CS50p-projet-Gestion-des-preinscriptions-dans-un-etablissemnt-superieur/tree/main``
+2. Assurez-vous d'avoir Python et les bibliothèques requises installées ``pip install -r requirements.txt``.
+3. Exécutez le programme en lançant le script `projet.py`.
 
 ## Structure du Programme
 

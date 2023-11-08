@@ -1,5 +1,6 @@
 import re
 from datetime import datetime
+import uuid
 
 def verifie_adresse_email(email):
     return bool(re.match(r"^[\w.%+-]+@udc\.edu\.km$", email))
@@ -29,5 +30,10 @@ def afficher_date_formattee():
     return date_formattee
 
 
+# Génère un UUID v4 (aléatoire)
+def genere_id():
+    unique_id = uuid.uuid4()
+    # Convertit l'UUID en une chaîne de caractères au format str
+    unique_id_str = str(unique_id)
 
-
+    return unique_id_str

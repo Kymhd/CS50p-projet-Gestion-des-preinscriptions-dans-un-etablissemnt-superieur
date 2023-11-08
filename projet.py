@@ -78,7 +78,8 @@ class Etudiant(Student):
 
     
     def modifier_informations(self):
-        """Methode pour modifier les informations de l'etdudiant, 
+        """
+        Methode pour modifier les informations de l'etdudiant, 
         """
         print(f"Les informations actuelles de l'étudiant sont :")
         print(self)

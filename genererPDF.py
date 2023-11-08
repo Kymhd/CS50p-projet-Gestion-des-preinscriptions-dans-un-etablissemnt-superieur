@@ -2,7 +2,7 @@
 from fpdf import FPDF
 import qrcode
 import os
-from validation import afficher_date_formattee
+from validation import afficher_date_formattee, genere_id
 
 dossier_images = 'images'
 
@@ -115,9 +115,23 @@ def generer_pdf_etudiant(etudiant):
     logo_path = os.path.join(dossier_images, 'udc.jpeg')
     pdf.image(logo_path, x=10, y=8, w=25)
 
+    
+    id_ = genere_id()
+    
+    # les données qui vont être stokées dans le CodeQr, il faut noter que l'ID
+    # unique qui est stocké dans ce code, n'est stocké nul part et 
+    # il sera toujours aleatoir à chaque generation d'un codeQr
+    donnees = f"Nom : {etudiant.nom}\n" \
+         f"Prénom : {etudiant.prenom}\n" \
+         f"Matricule : {etudiant.matricule}\n" \
+         f"Faculté : {etudiant.faculte}\n"\
+         f"Département : {etudiant.departement}\n"\
+         f"Email : {etudiant.email}\n"\
+         f"ID unique : {id_}\n"\
+        #  f"clique ici : 'https://urlz.fr/olT0'"
+    
     # Ajoutez le QR code
-    qr_code_data = f"Nom: {etudiant.nom}\nPrénom: {etudiant.prenom}\nMatricule: {etudiant.matricule}"
-    pdf.add_qr_code(qr_code_data, x=160, y=8, size=25)
+    pdf.add_qr_code(donnees, x=160, y=8, size=25)
 
     pdf.ln(20)
 
